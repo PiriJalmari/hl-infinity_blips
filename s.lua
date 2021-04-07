@@ -1,7 +1,7 @@
 ESX = nil
 local players = {}
 
-TriggerEvent('arp:getSharedObject', function(obj) ESX = obj end)
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 Citizen.CreateThread(function()
 	while true do

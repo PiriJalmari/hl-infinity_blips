@@ -7,7 +7,7 @@ local omaid = GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1)))
 Citizen.CreateThread(function()
 	while ESX == nil do
 		Citizen.Wait(100)
-		TriggerEvent('arp:getSharedObject', function(obj) ESX = obj end)
+		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 	end
 	while true do
 		Citizen.Wait(1)
